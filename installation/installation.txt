@@ -15,6 +15,6 @@ After preparing the environment and installing the requirements, you need to rep
 
 anaconda3/environement/lib/site-packages/totalsegmentator
 
-with the scripts found in the Git repository:
+with the all files found in the Git repository:
 
 /totalsegmentator
