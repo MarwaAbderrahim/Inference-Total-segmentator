@@ -4,7 +4,7 @@ conda install pytorch==2.0.0 torchvision==0.15.0 torchaudio==2.0.0 pytorch-cuda=
 
 pip install totalsegmentator
 
-pip install -r requirements-dev.txt
+pip install -r requirements.txt
 
 
 ####### Laste step 
