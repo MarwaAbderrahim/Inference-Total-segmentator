@@ -7,7 +7,7 @@ pip install totalsegmentator
 pip install -r requirements.txt
 
 
-####### Laste step 
+####### Last step 
 
 After preparing the environment and installing the requirements, you need to replace all the scripts located at:
 
