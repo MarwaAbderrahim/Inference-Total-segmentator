@@ -1,5 +1,7 @@
 ####### Installation 
 
+install anaconda3
+
 conda install pytorch==2.0.0 torchvision==0.15.0 torchaudio==2.0.0 pytorch-cuda=11.8 -c pytorch -c nvidia
 
 pip install totalsegmentator
@@ -11,7 +13,7 @@ pip install -r requirements.txt
 
 After preparing the environment and installing the requirements, you need to replace all the scripts located at:
 
-environement/lib/site-packages/totalsegmentator
+anaconda3/environement/lib/site-packages/totalsegmentator
 
 with the scripts found in the Git repository:
 
