@@ -11,7 +11,11 @@ def keep_largest_blob(data, debug=False):
     blob_map, _ = ndimage.label(data)
     counts = list(np.bincount(blob_map.flatten()))  # number of pixels in each blob
     if len(counts) <= 1: return data  # no foreground
+<<<<<<< HEAD
+    if debug: print(f"size of second largest blob: {sorted(counts)[-2]}")
+=======
     # if debug: print(f"size of second largest blob: {sorted(counts)[-2]}")
+>>>>>>> origin/main
     key_second = counts.index(sorted(counts)[-2])
     return (blob_map == key_second).astype(np.uint8)
 
@@ -28,7 +32,11 @@ def remove_small_blobs(img: np.ndarray, interval=[10, 30], debug=False) -> np.nd
         Detected blobs.
     """
     mask, number_of_blobs = ndimage.label(img)
+<<<<<<< HEAD
+    if debug: print('Number of blobs before: ' + str(number_of_blobs))
+=======
     # if debug: print('Number of blobs before: ' + str(number_of_blobs))
+>>>>>>> origin/main
     counts = np.bincount(mask.flatten())  # number of pixels in each blob
 
     # If only one blob (only background) abort because nothing to remove
@@ -40,9 +48,15 @@ def remove_small_blobs(img: np.ndarray, interval=[10, 30], debug=False) -> np.nd
     mask[mask > 0] = 1  # set everything else to 1
 
     if debug:
+<<<<<<< HEAD
+        print(f"counts: {sorted(counts)[::-1]}")
+        _, number_of_blobs_after = ndimage.label(mask)
+        print('Number of blobs after: ' + str(number_of_blobs_after))
+=======
         # print(f"counts: {sorted(counts)[::-1]}")
         _, number_of_blobs_after = ndimage.label(mask)
         # print('Number of blobs after: ' + str(number_of_blobs_after))
+>>>>>>> origin/main
 
     return mask
 
