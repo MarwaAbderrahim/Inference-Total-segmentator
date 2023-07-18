@@ -13,7 +13,6 @@ import nibabel as nib
 
 from totalsegmentator.libs import get_config_dir
 
-<<<<<<< HEAD
 
 
 def command_exists(command):
@@ -96,8 +95,6 @@ def dcm_to_nifti(input_path, output_path, verbose=False):
     # os.remove(str(output_path)[:-7] + ".json")
 
 
-=======
->>>>>>> origin/main
 def save_mask_as_rtstruct(img_data, selected_classes, dcm_reference_file, output_path):
     """
     dcm_reference_file: a directory with dcm slices ??

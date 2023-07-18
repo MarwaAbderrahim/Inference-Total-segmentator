@@ -51,12 +51,8 @@ def save_multilabel_nifti(img, output_path, label_map, nora_project=None):
     """
     img = add_label_map_to_nifti(img, label_map)
     nib.save(img, output_path)
-<<<<<<< HEAD
     if nora_project is not None:
         subprocess.call(f"/opt/nora/src/node/nora -p {nora_project} --add {str(output_path)} --addtag atlas", shell=True)
-=======
-
->>>>>>> origin/main
 
 
 def load_multilabel_nifti(img_path):

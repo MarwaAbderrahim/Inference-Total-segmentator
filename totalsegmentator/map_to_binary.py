@@ -227,7 +227,6 @@ class_map = {
         119: "spinal_cord",
     },
     # combine all ribs, vertebrae groups and left/right
-<<<<<<< HEAD
      "total_v2_fast": {
          1: "spleen",
          2: "kidney",
@@ -353,133 +352,6 @@ class_map = {
          19: "spinal_cord"
     },
     "test": {
-=======
-#     "total_v2_fast": {
-#         1: "spleen",
-#         2: "kidney",
-#         3: "gallbladder",
-#         4: "liver",
-#         5: "stomach",
-#         6: "aorta",
-#         7: "inferior_vena_cava",
-#         8: "portal_vein_and_splenic_vein",
-#         9: "pancreas",
-#         10: "adrenal_gland",
-#         11: "lung_upper_lobe_left",
-#         12: "lung_lower_lobe_left",
-#         13: "lung_upper_lobe_right",
-#         14: "lung_middle_lobe_right",
-#         15: "lung_lower_lobe_right",
-#         16: "vertebrae_lumbar",
-#         17: "vertebrae_thoracic",
-#         18: "vertebrae_cervical",
-#         19: "esophagus",
-#         20: "trachea",
-#         21: "heart_myocardium",
-#         22: "heart_atrium_left",
-#         23: "heart_ventricle_left",
-#         24: "heart_atrium_right",
-#         25: "heart_ventricle_right",
-#         26: "pulmonary_artery",
-#         27: "brain",
-#         28: "iliac_artery",
-#         29: "iliac_vena",
-#         30: "small_bowel",
-#         31: "duodenum",
-#         32: "colon",
-#         33: "ribs",
-#         34: "scapula",
-#         35: "clavicula",
-#         36: "hip",
-#         37: "sacrum",
-#         38: "face",
-#         39: "gluteus_maximus",
-#         40: "gluteus_medius",
-#         41: "gluteus_minimus",
-#         42: "autochthon",
-#         43: "iliopsoas",
-#         44: "urinary_bladder",
-#         45: "femur",
-#         46: "patella",
-#         47: "tibia",
-#         48: "fibula",
-#         49: "tarsal",
-#         50: "metatarsal",
-#         51: "phalanges_feet",
-#         52: "humerus",
-#         53: "ulna",
-#         54: "radius",
-#         55: "carpal",
-#         56: "metacarpal",
-#         57: "phalanges_hand",
-#         58: "sternum",
-#         59: "skull",
-#         60: "subcutaneous_fat",
-#         61: "skeletal_muscle",
-#         62: "torso_fat",
-#         63: "spinal_cord"
-#     },
-#     "lung_vessels": {
-#         1: "lung_vessels",
-#         2: "lung_trachea_bronchia"
-#     },
-#     "covid": {
-#         1: "lung_covid_infiltrate",
-#     },
-#     "cerebral_bleed": {
-#         1: "intracerebral_hemorrhage",
-#     },
-#     "hip_implant": {
-#         1: "hip_implant",
-#     },
-#     "coronary_arteries": {
-#         1: "coronary_arteries",
-#     },
-#     "body": {
-#         1: "body_trunc",
-#         2: "body_extremities",
-#     },
-#     "pleural_pericard_effusion": {
-#         # 1: "lung_pleural",
-#         2: "pleural_effusion",
-#         3: "pericardial_effusion",
-#     },
-#     "liver_vessels": {
-#         1: "liver_vessels",
-#         2: "liver_tumor"
-#     },
-#     "heartchambers_test": {
-#         1: "heart_myocardium", 
-#         2: "heart_atrium_left", 
-#         3: "heart_ventricle_left", 
-#         4: "heart_atrium_right", 
-#         5: "heart_ventricle_right", 
-#         6: "aorta", 
-#         7: "pulmonary_artery"
-#     },
-#     "bones_tissue_test" : {
-#         1: "femur",
-#         2: "patella",
-#         3: "tibia",
-#         4: "fibula",
-#         5: "tarsal",
-#         6: "metatarsal",
-#         7: "phalanges_feet",
-#         8: "humerus",
-#         9: "ulna",
-#         10: "radius",
-#         11: "carpal",
-#         12: "metacarpal",
-#         13: "phalanges_hand",
-#         14: "sternum",
-#         15: "skull",
-#         16: "subcutaneous_fat",
-#         17: "skeletal_muscle",
-#         18: "torso_fat",
-#         19: "spinal_cord"
-#     },
-     "test": {
->>>>>>> origin/main
          1: "carpal",
          2: "clavicula",
          3: "femur",
@@ -623,7 +495,6 @@ class_map_5_parts = {
         17: "iliopsoas_right"
     },
 
-<<<<<<< HEAD
     # 24 classes
     # 12. ribs start from vertebrae T12
     # Small subset of population (roughly 8%) have 13. rib below 12. rib
@@ -635,9 +506,6 @@ class_map_5_parts = {
     #
     # Quite often only 11 ribs (12. ribs probably so small that not found). Those 
     # cases often wrongly segmented. 
-=======
-
->>>>>>> origin/main
     "class_map_part_ribs": {
         1: "rib_left_1",
         2: "rib_left_2",
@@ -698,13 +566,7 @@ map_taskid_to_partname = {
     254: "class_map_part_muscles",
     255: "class_map_part_ribs",
 
-<<<<<<< HEAD
     517: "test"
 }
 
 # pprint({idx:v for idx, (k, v) in enumerate(a.items())}, sort_dicts=False)
-=======
-}
-
-
->>>>>>> origin/main

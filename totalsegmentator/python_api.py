@@ -30,7 +30,6 @@ def totalsegmentator(input, output, ml=False, task="total", roi_subset=None,
 
     crop_addon = [3, 3, 3]  # default value
 
-<<<<<<< HEAD
     task == "total"
     task_id = [251, 252, 253, 254, 255]
     resample = 1.5
@@ -38,15 +37,6 @@ def totalsegmentator(input, output, ml=False, task="total", roi_subset=None,
     crop = None
     model = "3d_fullres"
     folds = [0]
-=======
-    if task == "total":
-        task_id = [251, 252, 253, 254, 255]
-        resample = 1.5
-        trainer = "nnUNetTrainerV2_ep4000_nomirror"
-        crop = None
-        model = "3d_fullres"
-        folds = [0]
->>>>>>> origin/main
     crop_path = output if crop_path is None else crop_path
     download_pretrained_weights(task_id)
 
@@ -68,8 +58,4 @@ def totalsegmentator(input, output, ml=False, task="total", roi_subset=None,
                          output_type=output_type )
     seg = seg.get_fdata().astype(np.uint8)
 
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/main
     
