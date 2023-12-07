@@ -3,7 +3,6 @@
 Tool for segmentation of 104 classes in CT images. It was trained on a wide range of different CT images (different scanners, institutions, protocols,...) and therefore should work well on most images. 
 
 ### Installation
-
 TotalSegmentator works on Ubuntu, Mac and Windows and on CPU and GPU (on CPU it is slow).
 
 Install dependencies:  
